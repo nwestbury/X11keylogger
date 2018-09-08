@@ -10,11 +10,13 @@ Requires `libxtst-dev` package on Debian-based distros.
 
 ## Basic Usage
 
-`$ make`
-`$ ./keyrecorder out.csv`
-`$ ./keyplayer out.csv`
+```bash
+$ make`
+$ ./keyrecorder out.csv
+$ ./keyplayer out.csv
+```
 
 ## Credits
 
-Builds off the work done by anko's xkbcat (https://github.com/anko/xkbcat)
+Builds off the work done by X11 maintainers, anko's xkbcat (https://github.com/anko/xkbcat)
 which in turns builds off the work of Jon A. Maxwell.
