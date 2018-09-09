@@ -77,7 +77,7 @@ int main(int argc, char * argv[]) {
     unsigned long start_time = 0;
     KeySym s = 0;
 
-    while (s != XK_Escape) { // Until Escape is Pressed
+    while (s != XK_Escape && s != XK_F2) { // Until Escape or F2 is Pressed
         XEvent event;
         XGenericEventCookie *cookie = (XGenericEventCookie*)&event.xcookie;
         XNextEvent(disp, &event);

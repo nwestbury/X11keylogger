@@ -107,10 +107,10 @@ int main(int argc, char * argv[]) {
         // Simulate the keypress / keyrelease
         XTestFakeKeyEvent(disp, keycode, key_events[i].release, key_events[i].time - previous_time);
         previous_time = key_events[i].time;
-
-        // Clear the X buffer which actually sends the key press
-        XFlush(disp);
     }
+
+    // Clear the X buffer which actually sends the key press
+    XFlush(disp);
 
     free(key_events);
 
